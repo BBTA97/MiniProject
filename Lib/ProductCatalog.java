@@ -8,8 +8,8 @@ import java.util.ArrayList;
 public class ProductCatalog {
     private ArrayList<Product> products = new ArrayList<>();
 
-    //
-    //
+    // RI: products list is not null, contains no null element, and no duplicate products.
+    // AF: AR(products) = A catalog of all avalible products.
 
     private void checkRep(){
         if(products == null){
@@ -29,8 +29,8 @@ public class ProductCatalog {
     }
 
     /**
-     * 
-     * 
+     * เพิ่มสินค้าใหม่เข้าสู้แคตตาล็อก
+     * @param product สินค้าที่ต้องการเพิ่ม
      */
     public void addProduct(Product product){
         if(product != null && !products.contains(product)){
@@ -40,13 +40,13 @@ public class ProductCatalog {
     }
 
     /**
-     * 
-     * @param productId
-     * @return 
+     * ค้นหาสินค้าจากรหัสสินค้า
+     * @param productId รหัสสินค้าที่ต้องการค้นหา
+     * @return อ็อบเจกต์ Product หากพบ, หรือ null หากไม่พบ
      */
     public Product findById(String productId){
         for (Product p : products){
-            if(p.getproductId().equals(productId)){
+            if(p.getProductId().equals(productId)){
                 return p;
             }
         }

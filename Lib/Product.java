@@ -46,13 +46,13 @@ public class Product {
         checkRep();
     }
 
-    public String getproductId(){
+    public String getProductId(){
         return productId;
     }
-    public String getproductName(){
+    public String getProductName(){
         return productName;
     }
-    public double getprice(){
+    public double getPrice(){
         return price;
     }
 

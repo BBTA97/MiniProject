@@ -29,8 +29,8 @@ public class CartItem{
 
     /**
      * สร้างรายการในตะกร้า
-     * 
-     * 
+     * @param product ชื่อสินค้า
+     * @param quantity จำนวนสินค้า
      */
     public CartItem(Product product, int quantity){
         this.product = product;
