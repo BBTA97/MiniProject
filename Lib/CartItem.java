@@ -1,7 +1,7 @@
 package Lib;
 
 /**
- * ADT ที่เปลี่ยนแปลงได้ (Mutable) สำหรับข้อมูลสินค้า 1 รายการใน
+ * ADT ที่เปลี่ยนแปลงได้ (Mutable) สำหรับข้อมูลสินค้า 1 รายการในตะกร้า
  */
 public class CartItem{
     private final Product product;
@@ -12,8 +12,7 @@ public class CartItem{
     //  - quantity > 0
     //
     // Abstraction Ffunction (AF):
-    //  - AF(productId, productName, price) = An Item in a shopping cart with given 'product'
-    //    with the specified 'quantity'.
+    //  - AF(productId, productName, price) = An Item in a shopping cart with given 'product' with the specified 'quantity'.
 
     /**
      * ตรวจสอบว่า Rep Invariant เป็นจริงหรือไม่
